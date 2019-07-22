@@ -29,7 +29,7 @@
     </style>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-atom-dark.css" type="text/css"></head>
 
 
 <body>
@@ -400,7 +400,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                        3k
+                        2.9k
                     </div>
                     
 
@@ -430,7 +430,7 @@
 <p>安装选项全部默认，一路点击<code>Next</code>。</p>
 <p>最后安装好之后，按<code>Win+R</code>打开命令提示符，输入<code>node -v</code>和<code>npm -v</code>，如果出现版本号，那么就安装成功了。</p>
 <h2 id="添加国内镜像源"><a href="#添加国内镜像源" class="headerlink" title="添加国内镜像源"></a>添加国内镜像源</h2><p>如果没有梯子的话，可以使用阿里的国内镜像进行加速。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 
 <h1 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h1><hr>
 <p>为了把本地的网页文件上传到github上面去，我们需要用到分布式版本控制工具————Git<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">[下载地址]</a>。</p>
@@ -441,21 +441,21 @@
 <p>打开<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a>，新建一个项目，如下所示：</p>
 <p><img src="https://godweiyang.com/2018/04/13/hexo-blog/1.jpg" alt="img"></p>
 <p>然后如下图所示，输入自己的项目名字，后面一定要加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.github.io</span><br></pre></td></tr></table></figure>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.github</span><span class="selector-class">.io</span></span><br></pre></td></tr></table></figure>
 
 <p>后缀，README初始化也要勾上。</p>
 <p><img src="https://godweiyang.com/2018/04/13/hexo-blog/2.jpg" alt="img"></p>
 <p>然后项目就建成了，点击</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Settings</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">Settings</span></span><br></pre></td></tr></table></figure>
 
 <p>，向下拉到最后有个</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub Pages</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">GitHub Pages</span></span><br></pre></td></tr></table></figure>
 
 <p>，点击</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Choose a theme</span><br></pre></td></tr></table></figure>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">Choose <span class="selector-tag">a</span> theme</span><br></pre></td></tr></table></figure>
 
 <p>选择一个主题。然后等一会儿，再回到</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub Pages</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">GitHub Pages</span></span><br></pre></td></tr></table></figure>
 
 <p>，会变成下面这样：</p>
 <p><img src="https://godweiyang.com/2018/04/13/hexo-blog/3.jpg" alt="img"></p>
@@ -472,22 +472,22 @@
 <p>按<code>ctrl+c</code>关闭本地服务器。</p>
 <h1 id="连接Github与本地"><a href="#连接Github与本地" class="headerlink" title="连接Github与本地"></a>连接Github与本地</h1><hr>
 <p>首先右键打开git bash，然后输入下面命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;godweiyang&quot;</span><br><span class="line">git config --global user.email &quot;792321264@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">git<span class="built_in"> config </span>--global user.name <span class="string">"godweiyang"</span></span><br><span class="line">git<span class="built_in"> config </span>--global user.email <span class="string">"792321264@qq.com"</span></span><br></pre></td></tr></table></figure>
 
 <p>用户名和邮箱根据你注册github的信息自行修改。</p>
 <p>然后生成密钥SSH key：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;792321264@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">ssh-keygen</span> <span class="selector-tag">-t</span> <span class="selector-tag">rsa</span> <span class="selector-tag">-C</span> "792321264@<span class="keyword">qq</span>.<span class="keyword">com</span>"</span><br></pre></td></tr></table></figure>
 
 <p>打开<a href="https://github.com/" target="_blank" rel="noopener">github</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个SSH，名字随便。</p>
 <p>git bash中输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 
 <p>将输出的内容复制到框中，点击确定保存。</p>
 <p>输入<code>ssh -T git@github.com</code>，如果如下图所示，出现你的用户名，那就成功了。</p>
 <p><img src="https://godweiyang.com/2018/04/13/hexo-blog/6.jpg" alt="img"></p>
 <p>打开博客根目录下的<code>_config.yml</code>文件，这是博客的配置文件，在这里你可以修改与博客相关的各种信息。</p>
 <p>修改最后一行的配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/godweiyang/godweiyang.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repository</span>: <span class="attribute">https</span>:<span class="comment">//github.com/godweiyang/godweiyang.github.io</span></span><br><span class="line">  <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
 
 <p>repository修改为你自己的github项目地址。<strong>不过你这里看到的可能与我有点不一样，因为我已经修改过主题了，所以这一步先不用管，换完主题之后记得回来修改！</strong></p>
 <h1 id="写文章、发布文章"><a href="#写文章、发布文章" class="headerlink" title="写文章、发布文章"></a>写文章、发布文章</h1><hr>
@@ -512,7 +512,7 @@
 <p><img src="https://godweiyang.com/2018/04/13/hexo-blog/10.jpg" alt="img"></p>
 <h1 id="博客目录构成介绍"><a href="#博客目录构成介绍" class="headerlink" title="博客目录构成介绍"></a>博客目录构成介绍</h1><hr>
 <p>从上图可以看出，博客的目录结构如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- node_modules</span><br><span class="line">- public</span><br><span class="line">- scaffolds</span><br><span class="line">- source</span><br><span class="line">    - _posts</span><br><span class="line">    - about</span><br><span class="line">    - archive</span><br><span class="line">    - img</span><br><span class="line">    - tags</span><br><span class="line">- themes</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">- </span>node_modules</span><br><span class="line"><span class="bullet">- </span>public</span><br><span class="line"><span class="bullet">- </span>scaffolds</span><br><span class="line"><span class="bullet">- </span>source</span><br><span class="line"><span class="bullet">    - </span>_posts</span><br><span class="line"><span class="bullet">    - </span>about</span><br><span class="line"><span class="bullet">    - </span>archive</span><br><span class="line"><span class="bullet">    - </span>img</span><br><span class="line"><span class="bullet">    - </span>tags</span><br><span class="line"><span class="bullet">- </span>themes</span><br></pre></td></tr></table></figure>
 
 <p><code>node_modules</code>是node.js各种库的目录，<code>public</code>是生成的网页文件目录，<code>scaffolds</code>里面就三个文件，存储着新文章和新页面的初始设置，<code>source</code>是我们最常用到的一个目录，里面存放着文章、各类页面、图像等文件，<code>themes</code>存放着主题文件，一般也用不到。</p>
 <p>我们平时写文章只需要关注<code>source/_posts</code>这个文件夹就行了。</p>
@@ -524,7 +524,7 @@
 <p>首先你得注册一个畅言账号，<a href="http://changyan.kuaizhan.com/" target="_blank" rel="noopener">地址</a>。<br>然后打开如下页面，复制该段代码：</p>
 <p><img src="https://godweiyang.com/2018/04/13/hexo-blog/11.jpg" alt="img"></p>
 <p>打开</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\study\program\blog\themes\beantech\layout\post.ejs</span><br></pre></td></tr></table></figure>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line">D:<span class="symbol">\s</span>tudy<span class="symbol">\p</span>rogram<span class="symbol">\b</span>log<span class="symbol">\t</span>hemes<span class="symbol">\b</span>eantech<span class="symbol">\l</span>ayout<span class="symbol">\p</span>ost.ejs</span><br></pre></td></tr></table></figure>
 
 <p>，将代码粘贴到如下位置：</p>
 <p><img src="https://godweiyang.com/2018/04/13/hexo-blog/12.jpg" alt="img"></p>
@@ -533,44 +533,44 @@
 <p>更多插件例如热评话题之类的，可以自行在畅言后台找到代码添加。</p>
 <h2 id="添加图片放大功能"><a href="#添加图片放大功能" class="headerlink" title="添加图片放大功能"></a>添加图片放大功能</h2><p>首先下载<code>zooming.js</code>文件<a href="https://github.com/godweiyang/godweiyang.github.io/blob/master/js/zooming.js" target="_blank" rel="noopener">地址</a>，保存在<code>D:\study\program\blog\themes\beantech\source\js</code>目录下。</p>
 <p>打开<code>D:\study\program\blog\themes\beantech\layout\post.ejs</code>，在最下方粘贴如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/js/zooming.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"/js/zooming.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>然后文章里的图片就可以单击全屏啦。</p>
 <h2 id="添加数学公式显示"><a href="#添加数学公式显示" class="headerlink" title="添加数学公式显示"></a>添加数学公式显示</h2><p>打开<code>D:\study\program\blog\themes\beantech\layout\post.ejs</code>，在最下方粘贴如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>由于markdown语法与mathjax语法存在冲突，所以还需要修改源文件。</p>
 <p>打开<code>D:\study\program\blog\node_modules\marked\lib\marked.js</code><br><code>escape:</code>处替换成：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">escape: /^$[`*\[\]()#$+\-.!_&gt;])/</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">escape: /^$[<span class="string">`*\[\</span>](<span class="link"></span>)#$+\-.!_&gt;])/</span><br></pre></td></tr></table></figure>
 
 <p><code>em:</code>处替换成：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/</span><br></pre></td></tr></table></figure>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line">em: /^<span class="symbol">\*</span>((?:<span class="symbol">\*</span><span class="symbol">\*</span>|[<span class="symbol">\s</span><span class="symbol">\S</span>])+?)<span class="symbol">\*</span>(?!<span class="symbol">\*</span>)/</span><br></pre></td></tr></table></figure>
 
 <p>这时在文章里写数学公式基本没有问题了，但是要注意：<br><strong>数学公式中如果出现了连续两个{，中间一定要加空格！</strong></p>
 <p>举个例子:<br>行内公式：y=f(x)y=f(x)<br>代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$y = f(x)$</span><br></pre></td></tr></table></figure>
+<figure class="highlight gams"><table><tr><td class="code"><pre><span class="line"><span class="meta"><span class="meta-keyword">$y</span> = f(x)$</span></span><br></pre></td></tr></table></figure>
 
 <p>行间公式：</p>
 <p>y=fg1(x)y=fg1(x)</p>
 <p>代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\\[y = &#123;f_&#123; &#123;g_1&#125;&#125;&#125;(x)\\]</span><br></pre></td></tr></table></figure>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line"><span class="string">\\[y</span> = &#123;f_&#123; &#123;g_1&#125;&#125;&#125;(x)<span class="string">\\]</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>注意上面花括号之间有空格！</strong></p>
 <h2 id="添加留言板"><a href="#添加留言板" class="headerlink" title="添加留言板"></a>添加留言板</h2><p>在<code>D:\study\program\blog\themes\beantech\layout</code>中新建<code>bbs.ejs</code>，文件内容如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">---</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">    header.intro-header&#123;</span><br><span class="line">        background-position: right; </span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;!-- Chinese Version --&gt;</span><br><span class="line">&lt;div class=&quot;zh post-container&quot;&gt;</span><br><span class="line">    &lt;%- page.content %&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">---</span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">header</span><span class="selector-class">.intro-header</span>&#123;</span></span><br><span class="line">        background-position: right; </span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Chinese Version --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"zh post-container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">page.content</span> %&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>然后在<code>D:\study\program\blog\source</code>中新建<code>\bbs</code>文件夹，里面在新建<code>index.md</code>文件，内容如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: &quot;bbs&quot;</span><br><span class="line">title: &quot;BBS&quot;</span><br><span class="line">date: 2017-09-19 12:48:33</span><br><span class="line">description: &quot;欢迎交换友链，一起交流学习！&quot;</span><br><span class="line">header-img: &quot;img/header_img/home-bg-2-dark.png&quot;</span><br><span class="line">comments: true</span><br><span class="line">---</span><br><span class="line">此处替换为你的畅言评论代码~~~</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">"bbs"</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">"BBS"</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2017</span><span class="bullet">-09</span><span class="bullet">-19</span> <span class="number">12</span><span class="string">:48:33</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">"欢迎交换友链，一起交流学习！"</span></span><br><span class="line"><span class="attr">header-img:</span> <span class="string">"img/header_img/home-bg-2-dark.png"</span></span><br><span class="line"><span class="attr">comments:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">此处替换为你的畅言评论代码~~~</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="添加置顶功能"><a href="#添加置顶功能" class="headerlink" title="添加置顶功能"></a>添加置顶功能</h2><p>运行如下两条命令安装置顶插件：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">uninstall</span> hexo-generator-<span class="keyword">index</span> <span class="comment">--save</span></span><br><span class="line">npm <span class="keyword">install</span> hexo-generator-<span class="keyword">index</span>-pin-top <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
 
 <p>然后打开<code>D:\study\program\blog\themes\beantech\layout\index.ejs</code>，在如下位置添加代码：</p>
 <p><img src="https://godweiyang.com/2018/04/13/hexo-blog/14.jpg" alt="img"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (post.top) &#123;%&gt;</span><br><span class="line">    </span><br><span class="line">    置顶</span><br><span class="line">    |</span><br><span class="line">&lt;%&#125;%&gt;&lt; code&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight gcode"><table><tr><td class="code"><pre><span class="line">&lt;<span class="meta">%</span> <span class="keyword">if</span> <span class="comment">(post.top)</span> &#123;<span class="meta">%</span>&gt;</span><br><span class="line">    </span><br><span class="line">    置顶</span><br><span class="line">    |</span><br><span class="line">&lt;<span class="meta">%</span>&#125;<span class="meta">%</span>&gt;&lt; code&gt;</span><br></pre></td></tr></table></figure>
 
 <p>然后在你想置顶的文章md文件里，添加如下配置选项：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">top: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">top:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="添加网易云音乐BGM"><a href="#添加网易云音乐BGM" class="headerlink" title="添加网易云音乐BGM"></a>添加网易云音乐BGM</h2><p>写文章的时候，想插入一段BGM怎么办？</p>
 <p>首先打开网易云网页版，找到想听的歌曲，然后点击生成外链：</p>
@@ -578,7 +578,7 @@
 <p>复制如下代码：</p>
 <p><img src="https://godweiyang.com/2018/04/13/hexo-blog/16.jpg" alt="img"></p>
 <p>粘贴到文章里就行了，为了美观，设置一下居中，具体代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div align=&quot;middle&quot;&gt;这里粘贴刚刚复制的代码&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight x86asm"><table><tr><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> <span class="meta">align</span>=<span class="string">"middle"</span>&gt;这里粘贴刚刚复制的代码&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 
 <h2 id="添加访客人数统计和字数统计"><a href="#添加访客人数统计和字数统计" class="headerlink" title="添加访客人数统计和字数统计"></a>添加访客人数统计和字数统计</h2><p>我们使用一个国外的流量统计网站：<a href="https://godweiyang.com/2018/04/13/hexo-blog/gostats.com" target="_blank" rel="noopener">gostats.com</a>，首先注册一下。</p>
 <p>然后自己添加网站地址，过程就不详细说了，然后点击<code>Get counter code</code>，选择一个自己喜欢的风格。<br>如下图所示，选择一个样式，选择<code>HTML</code>，生成代码：</p>
@@ -587,16 +587,16 @@
 <p><img src="https://godweiyang.com/2018/04/13/hexo-blog/18.jpg" alt="img"></p>
 <p>默认的代码和我图中不一样，因为我不想点击图片跳转到它统计网站的链接，可以模仿我的自行修改。</p>
 <p>字数统计首先安装插件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save hexo-wordcount</span><br></pre></td></tr></table></figure>
+<figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">npm i --<span class="keyword">save</span> hexo-<span class="built_in">wordcount</span></span><br></pre></td></tr></table></figure>
 
 <p>然后打开<code>D:\study\program\blog\themes\beantech\layout\_partial\footer.ejs</code>，添加如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span class=&quot;post-count&quot;&gt;&lt;%= totalcount(site) %&gt; words altogether&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;span <span class="class"><span class="keyword">class</span></span>=<span class="string">"post-count"</span>&gt;<span class="xml"><span class="tag">&lt;<span class="name">%=</span> <span class="attr">totalcount</span>(<span class="attr">site</span>) %&gt;</span> words altogether<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 
 <p>具体位置见上图。</p>
 <h1 id="一些注意事项"><a href="#一些注意事项" class="headerlink" title="一些注意事项"></a>一些注意事项</h1><hr>
 <p>首先解释一下文章开头的配置，如下图所示：</p>
 <p><img src="https://godweiyang.com/2018/04/13/hexo-blog/19.jpg" alt="img"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title: 文章标题</span><br><span class="line">catalog: 是否显示段落目录</span><br><span class="line">date: 文章日期</span><br><span class="line">subtitle: 子标题</span><br><span class="line">header-img: 顶部背景图片</span><br><span class="line">top: 是否置顶</span><br><span class="line">tags: 标签</span><br><span class="line">categories: 分类</span><br></pre></td></tr></table></figure>
+<figure class="highlight subunit"><table><tr><td class="code"><pre><span class="line">title: 文章标题</span><br><span class="line">catalog: 是否显示段落目录</span><br><span class="line">date: 文章日期</span><br><span class="line">subtitle: 子标题</span><br><span class="line">header-img: 顶部背景图片</span><br><span class="line">top: 是否置顶</span><br><span class="line"><span class="keyword">tags:</span> 标签</span><br><span class="line">categories: 分类</span><br></pre></td></tr></table></figure>
 
 <p>网站图片都保存在<code>D:\study\program\blog\source\img</code>目录下，可以修改成自己的图片。</p>
 <p>如果换一台电脑想迁移博客的话，最简单的方法就是把博客整个目录拷贝过去，就是这么暴力。</p>
